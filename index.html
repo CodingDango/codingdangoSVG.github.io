@@ -3,44 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SVG Text Art</title>
+    <title>My SVG Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            margin: 20px;
+            color: #333;
+        }
+        a {
+            display: block;
+            margin: 10px auto;
+            font-size: 20px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <svg width="900" height="780" xmlns="http://www.w3.org/2000/svg">
-        <!-- Eye Shape Path -->
-        <defs>
-            <!-- Oval Path (Eye Outline) -->
-            <path id="ovalPath" d="M 200,390 Q 450,200 700,390 Q 450,580 200,390 Z" />
-            <!-- Circular Path (Inner Circle) -->
-            <path id="circlePath" d="M 450,390 m -180,0 a 180,180 0 1,1 360,0 a 180,180 0 1,1 -360,0" />
-        </defs>
+    <h1>My SVG Animations</h1>
+    <p>Click on the links below to view my SVG's</p>
     
-        <!-- Text Shaping the Oval (Eye Outline) -->
-        <text font-size="20" fill="darkcyan" letter-spacing="1">
-            <textPath href="#ovalPath" startOffset="0%">
-                An eye for an eye makes the whole world blind 
-                An eye for an eye makes the whole world blind, An eye for an eye makes the whole world blind
-            </textPath>
-        </text>
-    
-        <!-- Text Inside the Circle (Pupil) -->
-        <text font-size="18" fill="darkgreen" letter-spacing="1">
-            <textPath href="#circlePath" startOffset="0%">
-                An eye for an eye makes the whole world blind, 
-                An eye for an eye makes the whole world blind,
-                An eye for an eye makes the whole world blind
-            </textPath>
-        </text>
-    
-        <!-- Centered Quote Text (Iris) -->
-        <text x="330" y="380" font-size="35" fill="mediumvioletred">An eye for an eye,</text>
-        <text x="275" y="420" font-size="30" fill="mediumvioletred">makes the whole world blind.</text>
-        
-        <a href="SVG/index.html">View My SVG Project</a>
-    
-    </svg>
+    <!-- Links to SVG Files -->
+    <a href="SVG/svg1.html" target="_blank">SVG Text Art</a>
+    <a href="SVG/svg2.html" target="_blank">Animated Icon or Object SVG</a>
 </body>
 </html>
-
-
-
